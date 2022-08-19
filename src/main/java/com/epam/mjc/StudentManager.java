@@ -14,11 +14,7 @@ public class StudentManager {
 
   public static void main(String[] args) {
     StudentManager manager = new StudentManager();
-    try {
-      Student student = manager.find(20314);
-    } catch (StudentNotFoundException ex) {
-      System.err.print(ex);
-    }
+
     for (int i = 0; i < IDs.length; i++) {
       Student student = manager.find(IDs[i]);
       System.out.println("Student name " + student.getName());
